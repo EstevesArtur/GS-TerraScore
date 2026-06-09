@@ -48,3 +48,4 @@ document.addEventListener('DOMContentLoaded', function () {
   selBairro.value = 'republica'
   atualizar()
 })
+/* Implementa o simulador de intervenções urbanas, calculando impactos e exibindo comparações antes e depois. */

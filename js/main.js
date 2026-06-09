@@ -36,3 +36,4 @@ document.addEventListener('DOMContentLoaded', function () {
   const ano = document.querySelector('.ano-atual')
   if (ano) ano.textContent = new Date().getFullYear()
 })
+/* Gerencia funcionalidades globais da interface, como menu responsivo, navegação ativa e atualização do rodapé. */

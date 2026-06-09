@@ -61,3 +61,4 @@ function simularIntervencao(fatores, tipoChave) {
     delta: Math.round((depois - antes) * 10) / 10
   }
 }
+/* Contém a lógica principal do sistema ICAU, incluindo cálculo de score, classificação, cores e simulação de intervenções. */
