@@ -3,6 +3,7 @@
    Paleta: laranja queimado sobre fundo espacial.
    Breakpoints (PDF): mobile <=480 | tablet >=768 | desktop >=992
    ========================================================================== */
+/*"Adicionado comentários no style.css"*/
 :root {
   --bg: #141210;
   --bg-2: #1c1916;
@@ -83,6 +84,7 @@ img { max-width: 100%; height: auto; }
 .hamburguer span { display: block; height: 2px; width: 100%; background: var(--cream); border-radius: 2px; }
 
 /* ---- footer ---- */
+/*"style: documenta barras de fator, score badge e mapa SVG"*/
 .site-footer { border-top: 1px solid var(--border); background: var(--bg-2); margin-top: 3rem; }
 .footer-inner { display: flex; justify-content: space-between; gap: 2rem; padding: 2.2rem 0 1.6rem; flex-wrap: wrap; }
 .footer-brand { font-family: var(--font-display); font-size: 1.3rem; margin: 0 0 0.3rem; }
@@ -218,6 +220,7 @@ select { margin: 0.4rem 0; }
   .dois { grid-template-columns: 1fr; }
 }
 
+/* mobile: colunas colapsam, fontes menores */
 @media (max-width: 480px) {
   body { font-size: 15px; }
   h1 { font-size: 1.9rem; }
