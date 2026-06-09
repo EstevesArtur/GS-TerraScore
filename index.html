@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TerraScore: score ambiental por bairro (ICAU 0-100) a partir de dados orbitais. Global Solution 2026/1 - FIAP." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>TerraScore - da orbita ao bairro</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Terra<strong>Score</strong></span></a>
+      <button class="hamburguer" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/mapa.html">Mapa ICAU</a></li>
+          <li><a href="pages/comparativo.html">Comparativo</a></li>
+          <li><a href="pages/simulador.html">Simulador</a></li>
+          <li><a href="pages/dashboard.html">Dashboard</a></li>
+          <li><a href="pages/sobre.html">Sobre</a></li>
+          <li><a href="pages/integrantes.html">Integrantes</a></li>
+          <li><a href="pages/faq.html">FAQ</a></li>
+          <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container hero">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Space Connect &middot; Economia Espacial &middot; ODS 11</p>
+          <h1 class="hero-titulo">Terra<strong>Score</strong></h1>
+          <p class="hero-tag">Da orbita ao bairro &mdash; o score ambiental que orienta cidades, governos e empresas.</p>
+          <p class="lead">O TerraScore cruza dados orbitais publicos (Sentinel-2, Sentinel-5P, Landsat-9) com dados terrestres para gerar o <strong>ICAU &mdash; Indice de Carga Ambiental Urbana</strong>, de 0 a 100, por bairro. Sete fatores ambientais, decompostos e comparaveis, para decisoes de planejamento urbano fundamentadas em dado real.</p>
+          <div class="ctas">
+            <a class="btn" href="pages/mapa.html">Ver o mapa ICAU</a>
+            <a class="btn btn-ghost" href="pages/sobre.html">Como funciona</a>
+          </div>
+          <div class="ods">
+            <span class="ods-tag">ODS 11 &middot; Cidades sustentaveis</span>
+            <span class="ods-tag">ODS 13 &middot; Acao climatica</span>
+            <span class="ods-tag">ODS 9 &middot; Inovacao e infraestrutura</span>
+          </div>
+        </div>
+        <div class="card">
+          <p class="eyebrow">Exemplo &middot; Republica, Sao Paulo</p>
+          <div class="radar" id="radar-exemplo"></div>
+          <p class="center mono" id="exemplo-score"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <p class="eyebrow">O problema</p>
+      <h2>Dados orbitais existem. Decisoes urbanas continuam no escuro.</h2>
+      <p class="lead">Satelites medem temperatura, vegetacao e poluicao das cidades todos os dias &mdash; mas esse dado e inacessivel a quem decide: prefeituras, construtoras, equipes de saude e empresas. O TerraScore traduz a imagem orbital em um score consumivel por cada um desses publicos.</p>
+      <div class="cards-3 mt">
+        <div class="card"><p class="eyebrow">Orbital + terrestre</p><h3>7 fatores num so indice</h3><p class="muted">LST, NDVI, NO2, PM2.5, densidade construida, ruido e densidade populacional, ponderados por contexto.</p></div>
+        <div class="card"><p class="eyebrow">Por bairro</p><h3>Escala 0-100</h3><p class="muted">Quanto maior o ICAU, mais saudavel o ambiente. Abaixo de 30, faixa critica.</p></div>
+        <div class="card"><p class="eyebrow">Multi-persona</p><h3>4 publicos, 1 dado</h3><p class="muted">Governo, construtora, saude e empresa &mdash; cada um ve a leitura que importa para a sua decisao.</p></div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="card center">
+        <h2>Piloto controlado em duas cidades de perfis contrastantes</h2>
+        <p class="lead lead-center">Sao Paulo capital e Sao Caetano do Sul. MVP funcional, com tese e arquitetura preparadas para escala: 50 cidades em 12 meses, plataforma global em 36 meses.</p>
+        <div class="ctas ctas-center">
+          <a class="btn" href="pages/comparativo.html">Comparar bairros</a>
+          <a class="btn btn-ghost" href="pages/simulador.html">Simular intervencao</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Terra<strong>Score</strong></p>
+        <p class="footer-tag">Da orbita ao bairro &mdash; o score ambiental que orienta cidades, governos e empresas.</p>
+      </div>
+      <div class="footer-meta">
+        <p>Global Solution 2026/1 &middot; FIAP</p>
+        <p>Turma 1TDSPX-2026 &middot; 1o ano ADS</p>
+        <p class="muted">Tema: Space Connect &middot; ODS 11 &middot; 13 &middot; 9</p>
+      </div>
+    </div>
+    <div class="footer-copy"><div class="container">TerraScore analisa o <strong>ambiente urbano</strong> &mdash; nao realiza diagnostico individual de pessoas.</div></div>
+  </footer>
+  <script src="js/dados.js"></script>
+  <script src="js/icau.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
