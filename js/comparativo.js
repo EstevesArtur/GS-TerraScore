@@ -5,7 +5,6 @@
   - Popula os selects com os bairros disponíveis.
   - Permite selecionar dois bairros para comparação.
   - Calcula o ICAU de cada bairro com base em seus fatores.
-  - Atualiza os gráficos de radar dinamicamente.
   - Exibe a pontuação de cada bairro.
   - Gera um veredito indicando qual bairro possui melhor ICAU e a diferença entre eles.
 */
