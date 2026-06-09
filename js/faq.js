@@ -1,13 +1,32 @@
-/* FAQ: acordeon (abre/fecha respostas). */
+/* ==========================================================================
+   TerraScore - FAQ (Accordion)
+
+   Este módulo controla o comportamento da seção de perguntas frequentes.
+
+   Funcionalidades:
+   - Implementa acordeon (abre/fecha itens da FAQ).
+   - Alterna estado "aberto" via classe CSS.
+   - Atualiza acessibilidade com aria-expanded.
+   - Troca o ícone de "+" para "–" conforme estado.
+   - Permite interação simples e intuitiva sem recarregar a página.
+   ========================================================================== */
+
 document.addEventListener('DOMContentLoaded', function () {
   const botoes = document.querySelectorAll('.faq-botao')
+
   for (let i = 0; i < botoes.length; i++) {
     botoes[i].addEventListener('click', function () {
       const item = this.parentElement
+
       const aberto = item.classList.toggle('aberto')
+
       this.setAttribute('aria-expanded', aberto ? 'true' : 'false')
+
       const sinal = this.querySelector('.faq-sinal')
-      if (sinal) sinal.textContent = aberto ? '\u2013' : '+'
+
+      if (sinal) {
+        sinal.textContent = aberto ? '–' : '+'
+      }
     })
   }
 })
