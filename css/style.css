@@ -51,6 +51,7 @@ h1 { font-size: 2.4rem; letter-spacing: -0.5px; }
 h2 { font-size: 1.7rem; }
 h3 { font-size: 1.2rem; }
 p { margin: 0 0 1rem; }
+/* links e foco de acessibilidade */
 a { color: var(--ember); text-decoration: none; }
 a:hover { text-decoration: underline; }
 :focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
