@@ -28,6 +28,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
+/* cor de fundo, fonte base e gradiente decorativo fixo */
 body {
   margin: 0;
   background: var(--bg);
@@ -43,6 +44,7 @@ body {
   min-height: 100vh;
 }
 
+/* hierarquia tipográfica */
 h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; margin: 0 0 0.5em; font-weight: 600; }
 h1 { font-size: 2.4rem; letter-spacing: -0.5px; }
 h2 { font-size: 1.7rem; }
@@ -53,7 +55,7 @@ a:hover { text-decoration: underline; }
 :focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
 img { max-width: 100%; height: auto; }
 
-/* ---- layout ---- */
+/* ---- layout ---- */ /* largura máxima centralizada */
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
 .page { padding: 2.5rem 0 4rem; min-height: 60vh; }
 .eyebrow { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 2px; font-size: 0.72rem; color: var(--ember); margin-bottom: 0.6rem; }
@@ -198,6 +200,7 @@ select { margin: 0.4rem 0; }
 /* ==========================================================================
    RESPONSIVIDADE
    ========================================================================== */
+/* tablet: menu hamburguer, hero empilhado */
 @media (max-width: 991px) {
   .hamburguer { display: flex; }
   .nav-links { position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: var(--bg-2); border-bottom: 1px solid var(--border); padding: 0.5rem 1rem 1rem; max-height: 0; overflow: hidden; transition: max-height .25s ease; }
@@ -229,4 +232,4 @@ select { margin: 0.4rem 0; }
 }
 
 .lead-center { margin-left: auto; margin-right: auto; }
-<!-- finalizado e revisado por Diego Barbosa Rodrigues/RM568829 -->
+/* finalizado e revisado por Diego Barbosa Rodrigues/RM568829 */
