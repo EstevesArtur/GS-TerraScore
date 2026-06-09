@@ -1,0 +1,13 @@
+TerraScore - Global Solution 2026/1 - FIAP
+Disciplina: Front-End Design Engineering
+Turma: 1TDSPX-2026 (1o ano - Analise e Desenvolvimento de Sistemas - Fevereiro)
+
+Integrantes:
+
+RM569450 - Artur Esteves    - Turma 1TDSPX-2026 - REPRESENTANTE
+RM568829 - Diego Barbosa    - Turma 1TDSPX-2026
+RM570783 - Joao Fontenele   - Turma 1TDSPX-2026
+RM571109 - Vinicius Pacheco - Turma 1TDSPX-2026
+RM568814 - Yan Almeida      - Turma 1TDSPX-2026
+
+Repositorio: https://github.com/EstevesArtur/GS-TerraScore
