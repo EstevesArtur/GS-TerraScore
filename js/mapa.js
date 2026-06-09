@@ -43,3 +43,4 @@ document.addEventListener('DOMContentLoaded', function () {
   desenharMapa()
   desenharPainel()
 })
+/* Controla o mapa interativo, permitindo selecionar bairros e visualizar seus indicadores e resultados ICAU. */

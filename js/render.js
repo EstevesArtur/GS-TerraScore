@@ -98,3 +98,4 @@ function htmlLegenda() {
     '<span class="legenda-item"><span class="legenda-cor" style="background:#2E8B57"></span>Boa <em>&ge; 75</em></span>' +
     '</div></div>'
 }
+/* Responsável pela geração dinâmica dos componentes visuais em HTML e SVG, como radar, mapa, barras e legendas. */

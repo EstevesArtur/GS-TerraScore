@@ -11,3 +11,4 @@ document.addEventListener('DOMContentLoaded', function () {
     legenda.style.color = corPorScore(score)
   }
 })
+/* Responsável pela página inicial, exibindo o radar de exemplo e o score ICAU do bairro selecionado. */
