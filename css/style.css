@@ -2,8 +2,8 @@
    TerraScore - estilos globais
    Paleta: laranja queimado sobre fundo espacial.
    Breakpoints (PDF): mobile <=480 | tablet >=768 | desktop >=992
-   ========================================================================== */
-/*"Adicionado comentários no style.css"*/
+   ========================================================================== *//*"Adicionado comentários no style.css"*/
+/* variáveis globais de cor, fonte e tamanho */
 :root {
   --bg: #141210;
   --bg-2: #1c1916;
