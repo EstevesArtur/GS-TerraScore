@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="O que e o TerraScore e como o ICAU e calculado a partir de dados orbitais." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Sobre - TerraScore</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span><span>Terra<strong>Score</strong></span></a>
+      <button class="hamburguer" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="mapa.html">Mapa ICAU</a></li>
+          <li><a href="comparativo.html">Comparativo</a></li>
+          <li><a href="simulador.html">Simulador</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <p class="eyebrow">Sobre o projeto</p>
+      <h1>O que e o TerraScore</h1>
+      <p class="lead">O TerraScore e uma plataforma de inteligencia de carga ambiental urbana. Ela coleta dados de observacao da Terra a partir de missoes orbitais publicas e os combina com dados terrestres complementares para calcular, por bairro, um indice unico &mdash; o ICAU &mdash; que resume a qualidade ambiental do territorio numa escala de 0 a 100.</p>
+
+      <section class="section">
+        <h2>Por que isso importa</h2>
+        <p>Imagens de satelite sobre temperatura, vegetacao e poluicao do ar sao atualizadas continuamente e abertas ao publico. Na pratica, porem, esse dado fica restrito a especialistas. Prefeituras decidem obras, construtoras escolhem terrenos, equipes de saude orientam pacientes e empresas definem sedes &mdash; frequentemente sem nenhuma leitura ambiental estruturada do territorio. O TerraScore preenche essa lacuna traduzindo a imagem orbital num score consumivel.</p>
+      </section>
+
+      <section class="section">
+        <h2>Como o ICAU e calculado</h2>
+        <p>Cada bairro recebe sete fatores, normalizados de 0 a 100, em que valores mais altos indicam ambiente mais saudavel. O ICAU e a media ponderada desses fatores. O fator de menor valor e destacado como <strong>fator dominante</strong> &mdash; o que mais derruba a condicao do bairro e, portanto, a prioridade de intervencao.</p>
+        <div class="cards-3 mt">
+          <div class="card"><h3>Temperatura (LST)</h3><p class="muted">Temperatura de superficie. Valor alto = menos ilha de calor.</p><p class="mono muted">Fonte: Landsat-9 &middot; peso 0.18</p></div>
+          <div class="card"><h3>Cobertura vegetal (NDVI)</h3><p class="muted">Indice de vegetacao. Valor alto = mais area verde.</p><p class="mono muted">Fonte: Sentinel-2 &middot; peso 0.15</p></div>
+          <div class="card"><h3>Poluicao do ar (NO2)</h3><p class="muted">Dioxido de nitrogenio. Valor alto = ar mais limpo.</p><p class="mono muted">Fonte: Sentinel-5P &middot; peso 0.16</p></div>
+          <div class="card"><h3>Material particulado (PM2.5)</h3><p class="muted">Particulas finas. Valor alto = menos poluicao.</p><p class="mono muted">Fonte: CETESB / CAMS &middot; peso 0.16</p></div>
+          <div class="card"><h3>Densidade construida</h3><p class="muted">Ocupacao do solo. Valor alto = ocupacao equilibrada.</p><p class="mono muted">Fonte: VIIRS / WorldPop &middot; peso 0.12</p></div>
+          <div class="card"><h3>Ruido urbano</h3><p class="muted">Carga sonora. Valor alto = ambiente mais silencioso.</p><p class="mono muted">Fonte: Sensores + OSM &middot; peso 0.13</p></div>
+          <div class="card"><h3>Densidade populacional</h3><p class="muted">Adensamento humano. Valor alto = densidade saudavel.</p><p class="mono muted">Fonte: IBGE / WorldPop &middot; peso 0.10</p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Tecnologias utilizadas</h2>
+        <p class="muted">Site construido com HTML5 semantico, CSS3 (com @media para responsividade) e JavaScript puro &mdash; sem frameworks nem bibliotecas externas. O mapa e os graficos sao feitos em SVG inline gerado por JavaScript. Os dados orbitais de referencia vem de Sentinel-2, Sentinel-5P, Landsat-9 e fontes terrestres (CETESB, IBGE, OpenStreetMap).</p>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <p class="eyebrow">Escopo importante</p>
+          <h3>O TerraScore analisa o ambiente, nao a pessoa</h3>
+          <p class="muted">A plataforma quantifica caracteristicas ambientais do territorio com base em literatura de saude publica urbana e planejamento. Ela <strong>nao realiza diagnostico psicologico nem clinico individual</strong>: identifica correlacoes ambientais, nao condicoes de pessoas.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Terra<strong>Score</strong></p>
+        <p class="footer-tag">Da orbita ao bairro &mdash; o score ambiental que orienta cidades, governos e empresas.</p>
+      </div>
+      <div class="footer-meta">
+        <p>Global Solution 2026/1 &middot; FIAP</p>
+        <p>Turma 1TDSPX-2026 &middot; 1o ano ADS</p>
+        <p class="muted">Tema: Space Connect &middot; ODS 11 &middot; 13 &middot; 9</p>
+      </div>
+    </div>
+    <div class="footer-copy"><div class="container">TerraScore analisa o <strong>ambiente urbano</strong> &mdash; nao realiza diagnostico individual de pessoas.</div></div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

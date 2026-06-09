@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fale com a equipe do TerraScore." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Contato - TerraScore</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span><span>Terra<strong>Score</strong></span></a>
+      <button class="hamburguer" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="mapa.html">Mapa ICAU</a></li>
+          <li><a href="comparativo.html">Comparativo</a></li>
+          <li><a href="simulador.html">Simulador</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <p class="eyebrow">Fale com a equipe</p>
+      <h1>Contato</h1>
+      <p class="lead">Governo, construtora, saude ou empresa: conte o seu caso e a gente mostra como o ICAU se aplica ao seu territorio.</p>
+      <form class="form" id="form-contato" novalidate>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" />
+          <span class="erro" id="erro-nome"></span>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+          <span class="erro" id="erro-email"></span>
+        </div>
+        <div class="campo">
+          <label for="assunto">Perfil</label>
+          <select id="assunto" name="assunto">
+            <option value="GOVERNO">Governo / Prefeitura</option>
+            <option value="CONSTRUTORA">Construtora</option>
+            <option value="SAUDE">Saude</option>
+            <option value="EMPRESA">Empresa</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+          <span class="erro" id="erro-mensagem"></span>
+        </div>
+        <button type="submit" class="btn">Enviar mensagem</button>
+        <p class="sucesso" id="form-sucesso" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Terra<strong>Score</strong></p>
+        <p class="footer-tag">Da orbita ao bairro &mdash; o score ambiental que orienta cidades, governos e empresas.</p>
+      </div>
+      <div class="footer-meta">
+        <p>Global Solution 2026/1 &middot; FIAP</p>
+        <p>Turma 1TDSPX-2026 &middot; 1o ano ADS</p>
+        <p class="muted">Tema: Space Connect &middot; ODS 11 &middot; 13 &middot; 9</p>
+      </div>
+    </div>
+    <div class="footer-copy"><div class="container">TerraScore analisa o <strong>ambiente urbano</strong> &mdash; nao realiza diagnostico individual de pessoas.</div></div>
+  </footer>
+  <script src="../js/contato.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

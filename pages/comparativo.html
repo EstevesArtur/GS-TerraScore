@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compare o perfil ambiental de dois bairros lado a lado pelo ICAU." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Comparativo - TerraScore</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span><span>Terra<strong>Score</strong></span></a>
+      <button class="hamburguer" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="mapa.html">Mapa ICAU</a></li>
+          <li><a href="comparativo.html">Comparativo</a></li>
+          <li><a href="simulador.html">Simulador</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <p class="eyebrow">Solucao &middot; comparacao</p>
+      <h1>Comparativo de bairros</h1>
+      <p class="lead">Escolha dois bairros e veja os perfis ambientais lado a lado. O radar usa a mesma escala 0-100 nos sete eixos.</p>
+      <div class="dois mt">
+        <div class="card center">
+          <label class="eyebrow" for="sel-a">Bairro A</label>
+          <select id="sel-a"></select>
+          <div class="radar" id="radar-a"></div>
+          <div id="badge-a"></div>
+        </div>
+        <div class="card center">
+          <label class="eyebrow" for="sel-b">Bairro B</label>
+          <select id="sel-b"></select>
+          <div class="radar" id="radar-b"></div>
+          <div id="badge-b"></div>
+        </div>
+      </div>
+      <div class="card center mt"><p id="veredito"></p></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Terra<strong>Score</strong></p>
+        <p class="footer-tag">Da orbita ao bairro &mdash; o score ambiental que orienta cidades, governos e empresas.</p>
+      </div>
+      <div class="footer-meta">
+        <p>Global Solution 2026/1 &middot; FIAP</p>
+        <p>Turma 1TDSPX-2026 &middot; 1o ano ADS</p>
+        <p class="muted">Tema: Space Connect &middot; ODS 11 &middot; 13 &middot; 9</p>
+      </div>
+    </div>
+    <div class="footer-copy"><div class="container">TerraScore analisa o <strong>ambiente urbano</strong> &mdash; nao realiza diagnostico individual de pessoas.</div></div>
+  </footer>
+  <script src="../js/dados.js"></script>
+  <script src="../js/icau.js"></script>
+  <script src="../js/render.js"></script>
+  <script src="../js/comparativo.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
